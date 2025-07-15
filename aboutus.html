@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tunify | About Us</title>
+  <link rel="stylesheet" href="aboutus.css" />
+
+  <!-- Lottie Player -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <!-- Font Awesome for icons -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+</head>
+<body>
+
+
+<nav>
+  <ul>
+    <li class="brand">   <a href="index.html">  <img src="music_logo.png" alt="tunify" />  </a>Tunify</li>
+        <li><a href="index.html">HOME</a></li>
+
+    <li><a href="playlistss.html">Playlists</a></li>
+    <li class="moon"><button id="themeToggle">
+      <i class="fas fa-moon"></i>
+    </button></li>
+  </ul>
+  </nav>
+
+
+  <section class="about">
+    <img src="music_logo.png" alt="Tunify Logo" class="logo" />
+    <h2>Your Music. Your Mood.</h2>
+    <p>
+      At Aura, we believe music is more than just sound—it's an experience. We created Aura to be your ultimate musical companion, a place where you can discover new artists, rediscover old favorites, and connect with the rhythms that move you. Our mission is to make finding and enjoying music effortless, offering a personalized journey through a vast and diverse audio landscape. Dive in, explore, and let Aura amplify your world.
+    </p>
+    <div class="animation">
+      <lottie-player
+        src="https://assets7.lottiefiles.com/packages/lf20_puciaact.json"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 300px;"
+        loop
+        autoplay>
+      </lottie-player>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Users Say</h2>
+    <div class="cards">
+      <div class="card">
+        <p>"MVM changed the way I enjoy music daily!"</p>
+        <h4>– Aryan S.</h4>
+      </div>
+      <div class="card">
+        <p>"Love the design, super smooth experience."</p>
+        <h4>– Priya N.</h4>
+      </div>
+      <div class="card">
+        <p>"This is my go-to app for studying playlists."</p>
+        <h4>– Rahul M.</h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="you@example.com" required />
+      <textarea rows="5" placeholder="Your message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 MVM Player. Built with ❤️ for music lovers.
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('themeToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>

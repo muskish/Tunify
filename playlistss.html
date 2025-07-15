@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MVM Player | Playlists</title>
+  <link rel="stylesheet" href="playlistss.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+</head>
+<body>
+  <!-- ── Header ───────────────────────────────────────────── -->
+    <nav>
+        <ul class="navi">
+            <li class="brand">
+                <img src="music_logo.png" alt="tunify"> Tunify
+            </li>
+            <LI>|</LI>
+            <li>
+                <a href="index.html">HOME</a>
+            </li>
+            <LI>|</LI>
+            <li>
+                <a href="aboutus.html">ABOUT</a>
+            </li>
+            <li class="moon">
+              <button id="themeToggle">
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+        </ul>
+    </nav>
+
+  <!-- ── Playlists grid ────────────────────────────────────── -->
+  <section class="playlist-overview">
+    <h2>Pick a Vibe</h2>
+
+    <div class="playlist-grid">
+
+        <!-- Liked Songs -->
+        <a href="liked.html" class="playlist-card">
+        <img src="https://images.pexels.com/photos/3756766/pexels-photo-3756766.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Liked Songs" />
+        <div class="playlist-info">
+            <h3><i class="fas fa-heart" style="color: #1db954;"></i> Liked Songs</h3>
+            <p>Your personal collection 💚</p>
+        </div>
+        </a>
+
+
+      <!-- Playlist 1 -->
+      <a href="playlist.html" class="playlist-card">
+        <img src="https://images.pexels.com/photos/1648525/pexels-photo-1648525.jpeg?auto=compress&cs=tinysrgb&w=600"
+             alt="Top Hits"
+        />
+        <div class="playlist-info">
+          <h3>Top Hits 2025</h3>
+          <p>All the chart‑toppers in one place 🔥</p>
+        </div>
+      </a>
+
+      <!-- Playlist 2 -->
+      <a href="playlist.html" class="playlist-card">
+        <img src="https://images.pexels.com/photos/290660/pexels-photo-290660.jpeg?auto=compress&cs=tinysrgb&w=600"
+             alt="Chill Lofi"
+        />
+        <div class="playlist-info">
+          <h3>Lo‑Fi Beats</h3>
+          <p>Study • relax • repeat 📚</p>
+        </div>
+      </a>
+
+      <!-- Playlist 3 -->
+      <a href="playlist.html" class="playlist-card">
+        <img src="https://images.pexels.com/photos/1701194/pexels-photo-1701194.jpeg?auto=compress&cs=tinysrgb&w=600"
+             alt="Workout Mix"
+        />
+        <div class="playlist-info">
+          <h3>Workout Mix</h3>
+          <p>High‑energy tracks to power your reps 💪</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ── Footer ────────────────────────────────────────────── -->
+  <footer class="footer">
+    &copy; 2025 MVM Player. Choose your groove
+  </footer>
+
+  <!-- ── Dark‑mode toggle ──────────────────────────────────── -->
+  <script>
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>

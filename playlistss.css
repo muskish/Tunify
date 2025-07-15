@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+a{
+    color: #ffff;
+    font-family: "Varela Round", sans-serif;
+    text-decoration: none;
+        
+
+}
+
+nav
+{
+    font-family: "Raleway", sans-serif;
+}
+
+
+
+nav ul li
+{
+    padding: 0 12px;
+}
+
+.brand img
+{
+    width:75px;
+    /* padding: 0 8px; */
+}
+
+.brand
+{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+
+}
+
+.moon
+{
+  /* align-self: right; */
+  margin-left: auto;
+}
+
+
+
+.playlist {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.playlist h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+.playlist-table {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+
+:root {
+  --primary: #cd14c0;
+  --dark-bg: #bc94c2;
+  --light-bg: #390040;
+  --text-light: #111111;
+  --text-dark: #ffffff;
+  --card-bg-light: #26012b;
+  --card-bg-dark: #804d90;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--light-bg);
+  color: var(--text-dark);
+  transition: 0.3s ease;
+}
+
+body.dark {
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+}
+
+
+.navi{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background: linear-gradient(to bottom, #230028, transparent );
+    color: aliceblue;
+}
+
+nav ul li
+{
+    padding: 0 12px;
+}
+
+
+#themeToggle {
+  background: none;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+
+.logo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid var(--primary);
+  margin-bottom: 1rem;
+}
+
+
+
+.card {
+  background-color: #c2c094;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 250px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+
+.footer {
+  background: linear-gradient(to top, #6a0976,transparent );
+  color: #626262;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+}
+
+body.dark .footer
+{
+  background: linear-gradient(to top, hsl(294, 20%, 82%),transparent );
+
+}
+ 
+body.dark .navi {
+  background: linear-gradient(to bottom, #fda2ff,transparent );
+}
+
+
+/* ─── Playlist overview page ─────────────────────────────── */
+.playlist-overview {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.playlist-overview h2 {
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+.playlist-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.playlist-card {
+  background: var(--card-bg-light);
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,.08);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .25s, box-shadow .25s;
+}
+
+body.dark .playlist-card {
+  background: #906ba2;
+}
+
+.playlist-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.21);
+}
+
+.playlist-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.playlist-info {
+  padding: 1rem;
+}
+
+.playlist-info h3 {
+  margin: .4rem 0 .2rem;
+  font-size: 1.1rem;
+}
+
+.playlist-info p {
+  margin: 0;
+  font-size: .9rem;
+  color: #555;
+}
+
+body.dark .playlist-info p {
+  color: #ccc;
+}

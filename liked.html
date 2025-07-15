@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tunify - To keep you distracted</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+        <ul class="navi">
+            <li class="brand">
+                <img src="music_logo.png" alt="tunify"> Tunify
+            </li>
+            <LI>|</LI>
+            <li>
+                <a href="index.html">HOME</a>
+            </li>
+            <LI>|</LI>
+            <li>
+                <a href="aboutus.html">ABOUT</a>
+            </li>
+            <li class="moon">
+              <button id="themeToggle">
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+        </ul>
+    </nav>
+
+  <!-- Main Content -->
+  <div class="cont">
+    <div class="container">
+
+      <!-- Liked Songs Section -->
+      <div class="songList">
+        <h1>❤️ Liked Songs</h1>
+        <div class="songItemContainer" id="likedContainer"></div>
+      </div>
+
+      <div class="songBanner"></div>
+    </div>
+  </div>
+
+  <!-- Player Bottom Bar -->
+  <div class="bottom">
+    <input type="range" name="range" id="myProgressBar" min="0" max="100" />
+    <div class="icons">
+      <i class="fa-solid fa-backward" id="previous"></i>
+      <i class="fa-regular fa-circle-play" id="masterPlay"></i>
+      <i class="fa-solid fa-forward" id="next"></i>
+    </div>
+    <div class="songInfo">
+      <img src="beats.gif" width="42px" alt="" id="gif" />
+      <span id="masterSongName">Nothing playing...</span>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://kit.fontawesome.com/aea70a4c68.js" crossorigin="anonymous"></script>
+<script src="liked.js">
+</script>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
